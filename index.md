@@ -7,7 +7,7 @@ title: Tile Launcher – Privacy Policy
 
 **Effective date:** October 27, 2026<br>
 **Developer:** JYS Studio<br>
-**Contact:** [jignyasatandel2380@gmail.com](mailto:jignyasatandel2380@gmail.com)
+**Contact:** [geniuslearner252022@gmail.com](mailto:geniuslearner252022@gmail.com)
 
 This Privacy Policy explains how the Tile Launcher app for Android ("Tile Launcher",
 "the app", "we", "us") handles information. It applies to the app as distributed on
@@ -203,4 +203,4 @@ will also tell you in the app or in the Google Play release notes.
 For any question about this Privacy Policy or your data, contact:
 
 **JYS Studio**<br>
-Email: [jignyasatandel2380@gmail.com](mailto:jignyasatandel2380@gmail.com)
+Email: [geniuslearner252022@gmail.com](mailto:geniuslearner252022@gmail.com)
