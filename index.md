@@ -5,7 +5,7 @@ title: Tile Launcher – Privacy Policy
 
 # Tile Launcher – Privacy Policy
 
-**Effective date:** October 27, 2026<br>
+**Effective date:** October 30, 2026<br>
 **Developer:** JYS Studio<br>
 **Contact:** [geniuslearner252022@gmail.com](mailto:geniuslearner252022@gmail.com)
 
@@ -20,9 +20,11 @@ Google Play under the package name `com.jysstudio.tilelauncher`.
 - Almost everything the app reads (your apps, contacts, calendar, photos, step count,
   screen time, notification counts) is **processed only on your phone** and never
   leaves it.
-- Data leaves your phone in only two cases: the **weather** feature (an approximate
-  location sent to Open-Meteo) and **ads** (served by Google AdMob).
-- We **do not sell** your data, and we do not run analytics or crash reporting of our own.
+- Data leaves your phone in only these cases: the **weather** feature (an approximate
+  location sent to Open-Meteo), **ads** (served by Google AdMob), and **app analytics
+  and crash reports** (Google Firebase), which never include the personal data in
+  section 1.
+- We **do not sell** your data. You can turn off usage analytics in the app's Settings.
 - Every sensitive feature is **optional**, is off until you allow it, and can be
   turned off at any time in Android Settings.
 
@@ -71,9 +73,24 @@ If you do not allow location, the weather tile simply does not show local weathe
 
 ### Advertising (Google AdMob)
 
-The free version of Tile Launcher may show ads served by Google AdMob. It uses
-Google's User Messaging Platform (UMP) to ask for consent where the law requires it.
-These Google SDKs may automatically collect:
+The free version of Tile Launcher may show ads served by Google AdMob. Ads appear
+**only in the custom-tile screens**, never on your home screen, dock, app drawer or
+Today view:
+
+- a **banner** at the bottom of the custom-tile list and the custom-tile editor,
+- a **native ad** shown as one row in the custom-tile list,
+- an occasional **full-screen (interstitial) ad** after you finish creating or editing
+  custom tiles. It is never shown in the first minute after the app starts, at most
+  once every few minutes, and at most a few times per session, and
+- an optional **rewarded ad**, which you choose to watch in exchange for one extra
+  custom-tile slot. The slot is recorded only on your phone.
+
+We can switch ads off for everyone remotely (see "Firebase Remote Config" below).
+When ads are off, the app makes no ad requests and does not start the ad SDK or show
+the consent form.
+
+The app uses Google's User Messaging Platform (UMP) to ask for consent where the law
+requires it. When ads are on, these Google SDKs may automatically collect:
 
 - your device's advertising ID,
 - your IP address and the approximate location it implies,
@@ -87,13 +104,34 @@ ads, and to prevent fraud. It is processed by Google under the
 
 - **Consent:** In the European Economic Area, the United Kingdom and Switzerland,
   you are asked for consent before personalized ads are shown. You can change your
-  choice at any time from the app's Settings.
+  choice at any time from the privacy options in the app's Settings.
 - **Opting out of personalized ads:** You can reset or delete your advertising ID,
   or opt out of ad personalization, in Android Settings > Google > Ads (or
   Settings > Privacy > Ads, depending on your phone).
 
 The personal data that the app reads on your phone (section 1) is **never** shared
 with Google AdMob or used to target ads.
+
+### App analytics, crash reports and app configuration (Google Firebase)
+
+The app uses Google Firebase services to keep it working well:
+
+- **Firebase Analytics** records how features are used, as anonymous counts: for
+  example that a tile was tapped (with its type, such as "app" or "weather"), that a
+  setting was changed, that a backup was made, or that a rewarded ad was watched to
+  the end. It also records basic device
+  information (model, OS version, language, country) and an app-instance ID.
+  **You can turn it off** in the app's Settings > "Share usage analytics".
+- **Firebase Crashlytics** sends a report when the app crashes or hits an error: the
+  technical details of the error, device model, OS version and an app-instance ID.
+- **Firebase Remote Config** downloads app settings (such as whether ads are shown)
+  and sends an app-instance ID to do so.
+
+These reports **never contain** the names of the apps on your phone, your contacts,
+calendar, photos, searches, notification content or anything else from section 1.
+Firebase processes this data for us under the
+[Google Privacy Policy](https://policies.google.com/privacy) and the
+[Firebase privacy information](https://firebase.google.com/support/privacy).
 
 ### Links that open other apps
 
@@ -107,7 +145,8 @@ that app's or website's own privacy policy.
 - We do not create accounts or ask for your name, email or phone number.
 - We do not run our own servers, so we do not collect or store your data.
 - We do not sell, rent or trade personal data.
-- We do not use our own analytics, tracking or crash-reporting tools.
+- We do not track you across other apps or websites, and analytics never include
+  your personal data (see "Google Firebase" above).
 - We do not read the content of your messages or notifications.
 - We do not use the Accessibility API to observe your screen or what you type.
 
@@ -153,14 +192,15 @@ Data that the app stores stays on your phone until you remove it. You can:
 - **uninstall the app**, or use Android Settings > Apps > Tile Launcher > Storage >
   Clear data, to delete everything the app has stored.
 
-Because we hold no data about you, there is no server-side data for us to delete.
-Data processed by Google (ads, geocoder) and Open-Meteo (weather) is kept under their
-own retention policies, linked above.
+We run no servers of our own. Data processed by Google (ads, geocoder, Firebase
+analytics and crash reports) and Open-Meteo (weather) is kept under their own
+retention policies, linked above. Firebase data is tied only to a random
+app-instance ID, which is reset when you uninstall the app or clear its data.
 
 ## 8. Security
 
 Your data stays in the app's private, sandboxed storage on your phone. All network
-requests the app makes (weather and ads) use encrypted HTTPS connections. The app asks
+requests the app makes (weather, ads and Firebase) use encrypted HTTPS connections. The app asks
 for approximate location only, never precise location, and every sensitive
 permission can be revoked at any time.
 
@@ -193,7 +233,6 @@ Google and Open-Meteo may process data in countries other than your own. They ap
 their own safeguards to such transfers, as described in their privacy policies.
 
 ## 12. Changes to this policy
-
 If we change this policy, we will post the new version on this page and update the
 effective date above. If a change significantly affects how your data is handled, we
 will also tell you in the app or in the Google Play release notes.
