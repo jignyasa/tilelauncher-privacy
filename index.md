@@ -2,10 +2,9 @@
 layout: default
 title: Tile Launcher – Privacy Policy
 ---
-
 # Tile Launcher – Privacy Policy
 
-**Effective date:** October 30, 2026<br>
+**Effective date:** November 2, 2026<br>
 **Developer:** JYS Studio<br>
 **Contact:** [geniuslearner252022@gmail.com](mailto:geniuslearner252022@gmail.com)
 
@@ -95,7 +94,9 @@ requires it. When ads are on, these Google SDKs may automatically collect:
 - your device's advertising ID,
 - your IP address and the approximate location it implies,
 - device and app information (such as model, OS version and language),
-- how you interact with ads (views and taps), and diagnostics.
+- how you interact with ads (views and taps) and diagnostics, and
+- on phones that support it, Android Privacy Sandbox signals (ad topics and ad
+  measurement) that Android provides instead of cross-app tracking.
 
 Google uses this information to serve, personalize (where you allow it) and measure
 ads, and to prevent fraud. It is processed by Google under the
@@ -120,7 +121,9 @@ The app uses Google Firebase services to keep it working well:
   example that a tile was tapped (with its type, such as "app" or "weather"), that a
   setting was changed, that a backup was made, or that a rewarded ad was watched to
   the end. It also records basic device
-  information (model, OS version, language, country) and an app-instance ID.
+  information (model, OS version, language, country), how the app was installed
+  (the Google Play install referrer) and an app-instance ID. It does not collect your
+  advertising ID.
   **You can turn it off** in the app's Settings > "Share usage analytics".
 - **Firebase Crashlytics** sends a report when the app crashes or hits an error: the
   technical details of the error, device model, OS version and an app-instance ID.
